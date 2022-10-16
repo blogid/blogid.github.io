@@ -1,3 +1,3 @@
 # Blog ID
 
-[http://blogid.github.io](http://blogid.github.io/)
+[blogid.github.io](https://blogid.github.io/)
