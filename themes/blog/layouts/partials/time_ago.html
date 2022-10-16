@@ -1,0 +1,25 @@
+{{ $ageMinutes := div (sub now.Unix .Date.Unix) 3600 }}
+{{ $ageHours := div (sub now.Unix .Date.Unix) 61200 }}
+{{ $ageDays := div (sub now.Unix .Date.Unix) 86400 }}
+{{ $ageMonths := div (sub now.Unix .Date.Unix) 2592000 }}
+{{ $ageYears := div (sub now.Unix .Date.Unix) 31104000 }}
+
+{{ if eq $ageMinutes 0 }}
+<span class="c-r">Update</span>
+{{ else if eq $ageHours 0 }}
+<span class="c-1">Today</span>
+{{ else if eq $ageDays 0 }}
+<span class="c-1">1 Day ago</span>
+{{ else if lt $ageDays 31 }}
+<span class="c-1">{{ $ageDays }}
+{{ cond (eq $ageDays 1) "Day" "Days" }}
+ ago</span>
+{{ else if lt $ageMonths 12 }}
+<span class="c-1">{{ $ageMonths }}
+{{ cond (eq $ageMonths 1) "Month" "Months" }}
+ ago</span>
+{{ else }}
+<span class="c-1">{{ $ageYears }}
+{{ cond (eq $ageYears 1) "Year" "Years" }}
+ ago</span>
+{{ end }}

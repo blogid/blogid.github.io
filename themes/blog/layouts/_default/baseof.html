@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{- partial "head.html" . -}}
+    <body id="top">
+      <div class="d-g gg-15 m-0a p-r o-a max-w">
+        <header class="bc-2 p-5 pr-15 pl-15 o-h">
+          {{- partial "header.html" . -}}
+        </header>
+        <main class="pl-15 pr-15 b1-d p-5">
+          {{- block "main" . }}{{- end }}
+        </main>
+        <footer class="d-g gg-10 ftr">
+          {{- partial "footer.html" . -}}
+        </footer>
+      </div>
+    </body>
+</html>

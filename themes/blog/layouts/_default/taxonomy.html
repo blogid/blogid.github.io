@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ .Content }}
+<h3 class="d-n">{{ .Site.Title }} - List Pages</h3>
+  <div class="d-g gg-15 gtc-r">
+    {{ range .Pages }}
+    <article>
+      <a class="d-f ai-c gg-15 fs-20 mb-7" href="{{ .Permalink }}">
+        <img class="br-100 of-c d-b" src="{{ .Params.image }}" alt="{{ .Title }}" height="20px" width="20px">
+        <h2 class="o-h to-e d-1le fs-20">
+          {{ .Title }}
+        </h2>
+      </a>
+      <p class="fs-20 o-h to-e c-3 o-h to-e d-5le">
+        {{- partial "time_ago.html" . -}}— <b class="c-2">{{ .Site.Title }}</b>
+        {{ .Summary }}
+      </p>
+    </article>
+    {{ end }}
+  </div>
+{{ end }}

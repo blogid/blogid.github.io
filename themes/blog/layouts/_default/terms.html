@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{ .Content }}
+<div class="d-g gg-15 gtc-r">
+{{ range .Pages }}
+  <a class="bc-2 fs-15 p-5 br-3 d-f ai-c jc-c" href="{{ .Permalink }}">{{ .Title }}</a>
+{{ end }}
+</div>
+{{ end }}

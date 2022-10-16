@@ -1,0 +1,9 @@
+<div class="bc-2 p-5 pr-15 pl-15">
+  {{ if .IsHome }}
+  <h3 class="ta-c fs-15 fs-m">
+    <span>Copyright {{ emojify ":copyright:" }} {{ now.Year }} <a href="/">{{ .Site.Title }}</a>. All rights reserved.</span>
+  </h3>
+  {{ else }}
+  <span class="d-f jc-c fs-15"><a class="c-3" href="/about/privacy-policy/">Privacy Policy</a></span>
+  {{ end }}
+</div>

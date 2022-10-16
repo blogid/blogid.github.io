@@ -1,0 +1,33 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-site-verification" content="De67f0F1N8ctOzMxtsnXwEUntWaL72mQkID0olFQV6Q"/>
+  <link rel="shortcut icon" href="{{ .Site.Params.favicon }}" type="image/x-icon">
+  <title>{{- if .IsHome -}}{{ .Site.Title }} | Is a Natural Healthy Tricks{{- else if .IsSection -}}{{ .Page.Title }}{{- else if .IsNode -}}{{ .Site.Title }} - {{ .Page.Title }}{{- else if .IsPage -}}{{ .Page.Title }} | {{ .Site.Title }}{{- else -}}{{ .Site.Title }} | Is a Natural Healthy Tricks{{- end -}}</title>
+  {{ if .IsPage }}<meta name="keywords" content="{{ if .Params.Keywords }}{{ delimit .Params.Keywords ", " }}{{ else }}{{ end }}">{{ else }}{{ end }}
+  <meta name="description" content="{{ if .Params.Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/index.xml" title="{{ .Site.Title }}">
+  <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/feed.xml" title="{{ .Site.Title }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL}}">
+  {{ if isset .Site.Params "twitter" }}
+  <meta name="twitter:card" content="{{ if .Params.image }}summary_large_image{{else}}summary{{end}}">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
+  <meta name="twitter:description" content="{{ if .Params.Keywords }}{{ delimit .Params.Keywords " , "}}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+  <meta name="twitter:site" content="{{ .Site.Params.twitter }}">
+  <meta name="twitter:creator" content="{{ .Site.Params.twitter }}">
+  {{ if .Params.image }}<meta name="twitter:image" content="{{ .Params.image }}">{{ end }}
+  {{ end }}
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:type" content="{{ if .IsPage }}NHT Page{{ else }}NHT{{ end }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
+  <meta property="og:description" content="{{ if .Params.Keywords }}{{ delimit .Params.Keywords " , "}}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  {{ if .Params.image }}
+  <meta property="og:image" content="{{ .Params.image }}">
+  <meta property="og:image:secure_url" content="{{ .Params.image }}">
+  {{- end }}
+  {{ if isset .Params "date" }}<meta property="article:published_time" content="{{ (time .Date).Format "2006-01-02T15:04:05Z" }}">{{ end }}
+</head>

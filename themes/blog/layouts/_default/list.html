@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ .Content }}
+<h3 class="d-n">{{ .Site.Title }} - List Pages</h3>
+  <div class="d-g gg-15 gtc-r">
+    {{ range .Pages }}
+    <article>
+      <h2 class="o-h to-e d-1le fs-20 mb-7">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+      <p class="fs-20 o-h to-e c-3 o-h to-e d-5le">
+        <b class="c-2">{{ .Site.Title }}</b>
+        {{ .Summary }}
+      </p>
+    </article>
+    {{ end }}
+  </div>
+{{ end }}

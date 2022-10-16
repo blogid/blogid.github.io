@@ -1,0 +1,39 @@
+baseURL = 'https://www.rizqyromadhona.my.id'
+languageCode = 'en-us'
+title = 'NHT Pages'
+theme = 'blog'
+enableRobotsTXT = 'true'
+paginate = 6
+summaryLength = 40
+copyright = '2022. Blog - All rights reserved'
+
+[Author]
+    name = 'Rizqy Romadhon A'
+    email = 'rizqymedsos@gmail.com'
+[params]
+  Description = 'NHT Pages Is a page that discusses natural, cheap, and happy health. Discuss all things about the natural world of health like this nature. Natural health. Natura health center.'
+  favicon = 'https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/512/202124/external-health-sport-tanah-basah-basic-outline-tanah-basah.png'
+  twitter = 'Rizqy'
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 5
+    ordered = false
+[markup.goldmark.renderer]
+  unsafe = true
+[taxonomies]
+  tags = 'tags'
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+  [[related.indices]]
+    name = 'keywords'
+    weight = 90
+  [[related.indices]]
+    name = "title"
+    weight = 100

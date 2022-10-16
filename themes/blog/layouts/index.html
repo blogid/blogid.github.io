@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="d-g gg-10">
+  <div class="d-g gg-15 gtc-r">
+    {{ $pages := site.RegularPages }}
+    {{ range ( .Paginate $pages ).Pages }}
+    {{ if ne .Section "About" }}
+    <article>
+      <a class="d-f ai-c gg-15 fs-20 mb-7" href="{{ .Permalink }}">
+        <img class="br-100 of-c d-b" src="{{ .Params.image }}" alt="{{ .Title }}" height="20px" width="20px">
+        <h2 class="o-h to-e d-1le fs-20">
+          {{ .Title }}
+        </h2>
+      </a>
+      <p class="fs-20 o-h to-e c-3 o-h d-5le">
+        {{- partial "time_ago.html" . -}}— <b class="c-2">{{ .Site.Title }}</b>
+        {{ .Summary }} Tags {{ delimit .Params.keywords ", " }}
+      </p>
+    </article>
+    {{ end }}
+    {{ end }}
+  </div>
+
+  <div class="jc-c d-f gg-15 ai-c">
+    {{ if .Paginator.HasPrev }}
+    <a class="d-f ai-c c-1" href="{{ .Paginator.Prev.URL }}">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+        <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1z"/>
+      </svg>
+    </a>
+    {{ end }}
+    <span class="bbs-d m-0 p-0">{{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span>
+    {{ if .Paginator.HasNext }}
+    <a class="d-f ai-c br-3 c-1" href="{{ .Paginator.Next.URL }}">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+      </svg>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

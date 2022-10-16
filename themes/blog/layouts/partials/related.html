@@ -1,0 +1,24 @@
+<related>
+  {{ $related := .Site.RegularPages.Related . | first 3 }}
+  {{ with $related }}
+  <div class="d-g gg-15">
+    <span class="bbs-d d-f jc-sb ai-c gg-10"><h2 class="d-f ai-c gg-10 body"><img class="bc-3" src="https://img.icons8.com/pastel-glyph/512/favourite-file--v2.png" width="20" height="20" alt="Read other similar pages"/> Read other similar pages</h2> <a class="c-4 d-f ai-c" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/></svg></a></span>
+    <div class="d-g gg-15">
+      {{ range . }}
+      <article>
+        <a class="d-f ai-c gg-15 fs-20 mb-7" href="{{ .Permalink }}">
+          <img class="br-100 of-c d-b" src="{{ .Params.image }}" alt="{{ .Title }}" height="20px" width="20px">
+          <h3 class="o-h to-e d-1le fs-20">
+            {{ .Title }}
+          </h3>
+        </a>
+        <p class="fs-20 o-h to-e c-4 o-h to-e d-5le">
+          {{- partial "time_ago.html" . -}}— <b class="c-2">{{ .Site.Title }}</b>
+          {{ .Summary }}
+        </p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</related>
