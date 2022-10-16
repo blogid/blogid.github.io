@@ -9,7 +9,7 @@ html,body,a,abbr,acronym,address,applet,b,big,blockquote,caption,center,cite,cod
 .gg-5{grid-gap:5px}.gg-10{grid-gap:10px}.gg-15{grid-gap:15px}
 .jc-sb{justify-content:space-between}.jc-c{justify-content:center}
 .m-0{margin:0}.m-5{margin:5px}.mr-5{margin-right:5px}.mb-7{margin-bottom:7px}.ml-5{margin-left:5px}.m-0a{margin:0 auto}.max-w{max-width:1080px}
-.o-a{overflow:auto}.o-v{overflow:visible}.o-h,img{overflow:hidden}.of-c{object-fit:cover}
+.o-a{overflow:auto}.o-v{overflow:visible}.o-h{overflow:hidden}.of-c{object-fit:cover}
 .p-0{padding:0}.p-5{padding:5px}.pr-15{padding-right:15px}.pl-15{padding-left:15px}.p-r{position:relative}.p-a{position:absolute}
 .to-e{text-overflow:ellipsis}.title{color:#E59866;padding:0;margin:0}.ta-c{text-align:center}
 .ws-n{white-space:nowrap}.widget{padding:10px;margin:0;overflow:hidden;position:relative}.w-f{width:100%}

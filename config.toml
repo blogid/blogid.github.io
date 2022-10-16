@@ -1,6 +1,6 @@
 baseURL = 'https://www.rizqyromadhona.my.id'
 languageCode = 'en-us'
-title = 'NHT Pages'
+title = 'Blog ID'
 theme = 'blog'
 enableRobotsTXT = 'true'
 paginate = 6
@@ -9,9 +9,9 @@ copyright = '2022. Blog - All rights reserved'
 
 [Author]
     name = 'Rizqy Romadhon A'
-    email = 'rizqymedsos@gmail.com'
+    email = 'rizqyblogspot@gmail.com'
 [params]
-  Description = 'NHT Pages Is a page that discusses natural, cheap, and happy health. Discuss all things about the natural world of health like this nature. Natural health. Natura health center.'
+  Description = 'Blog ID is a blog that covers many topics, such as Health, Technology, Fitness, Finance, Psychology, Tutorials, and many others.'
   favicon = 'https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/512/202124/external-health-sport-tanah-basah-basic-outline-tanah-basah.png'
   twitter = 'Rizqy'
 [markup]

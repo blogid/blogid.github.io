@@ -1,19 +1,14 @@
 <div class="p-a bc-3 br-3 p-5 d-f ai-c gg-10 br-5 fs-15">
   {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
-  <span class="d-f ai-c gg-5">
-    <img class="br-3" src="https://img.icons8.com/external-icongeek26-outline-icongeek26/512/1a73e8/external-Reading-Time-tea-icongeek26-outline-icongeek26.png" width="20" height="20" alt="Reading Time"/>
-    {{ math.Round (div (countwords .Content) 220.0) }} Min. Read,
+  <span>
+    {{ math.Round (div (countwords .Content) 220.0) }} Min. Reading time,
   </span>
-  
-  <span class="d-f ai-c gg-5">
-    <img class="br-3" src="https://img.icons8.com/external-microdots-premium-microdot-graphic/512/external-words-basic-design-microdots-premium-microdot-graphic.png" width="20" height="20" alt="Word Count"/>
+
+  <span>
     {{ .WordCount }} Words.
   </span>
 </div>
   
 <div class="p-a bc-3 br-3 p-5 d-f ai-c tl-5 fs-15">  
-  <span class="d-f ai-c gg-5">
-    <img class="br-3" src="https://img.icons8.com/dotty/512/1a73e8/tags.png" width="20" height="20" alt="{{ .Site.Title}} - Tags"/>
-    <p>{{ range $key, $value := $.Params.tags }}<a class="c-r" href="/tags/{{ $value | urlize }}">{{ $value }}</a>{{ if ne $key (sub (len $.Params.tags) 1) }}, {{ else }}.{{ end }}{{ end }}</p>
-  </span>
+  <p>Tags: {{ range $key, $value := $.Params.tags }}<a class="c-r" href="/tags/{{ $value | urlize }}">{{ $value }}</a>{{ if ne $key (sub (len $.Params.tags) 1) }}, {{ else }}.{{ end }}{{ end }}</p>
 </div>
