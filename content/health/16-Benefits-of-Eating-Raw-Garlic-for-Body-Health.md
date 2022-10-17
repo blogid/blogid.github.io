@@ -123,11 +123,11 @@ tags:
 - Raw garlic
 ---
 
-Benefits of Eating Garlic – Do you like to eat garlic? You must be familiar with this one kitchen spice, because almost all of the spices use garlic.
+Benefits of Eating Garlic – Do you like to eat garlic..? You must be familiar with this one kitchen spice, because almost all of the spices use garlic.
 
 It's no secret that garlic has many benefits for the human body, especially when consumed raw. The benefits of eating raw garlic are dermatologically proven to ward off several disease disorders ranging from inflammation, flu, cough and others. Even serious diseases, such as cholesterol, cancer, and so on can also be helped by this Garlic. That is why many people are now specifically consuming garlic for medicine or prevention of certain disease disorders. Consuming garlic can indeed be a natural alternative that can be done to prevent various disease disorders.
 
-Actually what is the content of garlic so it is good for consumption by the body ..? The following is an explanation of the nutritional content and benefits of raw garlic for the health of the body:
+Actually what is the content of garlic so it is good for consumption by the body..? The following is an explanation of the nutritional content and benefits of raw garlic for the health of the body:
 
 ## Nutritional Content in Garlic
 
