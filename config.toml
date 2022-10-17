@@ -5,7 +5,7 @@ theme = 'blog'
 enableRobotsTXT = 'true'
 paginate = 6
 summaryLength = 40
-copyright = '2022. Blog - All rights reserved'
+copyright = '2022. Blog ID - All rights reserved'
 
 [Author]
     name = 'Rizqy Romadhon A'

@@ -13,7 +13,7 @@
           </h3>
         </a>
         <p class="fs-20 o-h to-e c-4 o-h to-e d-5le">
-          {{- partial "time_ago.html" . -}}— <b class="c-2">{{ .Site.Title }}</b>
+          {{- partial "time_ago.html" . -}}— <b class="c-2">{{ .CurrentSection.Title }}</b>
           {{ .Summary }}
         </p>
       </article>

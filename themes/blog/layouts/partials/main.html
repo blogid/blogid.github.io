@@ -1,11 +1,11 @@
 {{ if isset .Params "tags" }}
-<p class="d-n"><b>Tags </b>{{ range $key, $value := $.Params.keywords }}<a href="#{{ $value | urlize }}">{{ $value }}</a>{{ if ne $key (sub (len $.Params.keywords) 1) }}, {{ else }}.{{ end }}{{ end }}</p>
+<p class="d-n">{{ delimit .Params.keywords ", " }}</p>
 <div class="d-g gg-15 body">
   <div class="p-r">
-    <img loading="lazy" class="thumb of-c d-b" src="{{ .Params.image }}" alt="{{ .Title }}">
+    <img loading="lazy" class="thumb of-c d-b" src="{{ .Params.image }}" alt="{{ .CurrentSection.Title }} - {{ .Title }}">
     {{- partial "meta.html" . -}}
   </div>
-  <div class="gg-15 ai-c"><h2>{{ .Site.Title }} — {{ .Title }}</h2></div>
+  <div class="gg-15 ai-c"><h2>{{ .CurrentSection.Title }} — {{ .Title }}</h2></div>
   {{ .Page.TableOfContents }}
   {{- .Content -}}
 </div>
