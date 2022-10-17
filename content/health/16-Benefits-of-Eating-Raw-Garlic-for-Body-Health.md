@@ -119,6 +119,8 @@ keywords:
 - Blog ID
 tags:
 - Garlic
+- Benefits of garlic
+- Raw garlic
 ---
 
 Benefits of Eating Garlic – Do you like to eat garlic? You must be familiar with this one kitchen spice, because almost all of the spices use garlic.
