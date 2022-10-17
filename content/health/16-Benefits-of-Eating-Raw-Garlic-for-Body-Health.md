@@ -3,7 +3,7 @@ title: "16 Benefits of Eating Raw Garlic for Body Health"
 date: 2022-10-17T06:20:27Z
 draft: false
 image: 'https://telegra.ph/file/65fe60bac53feb922c20a.png'
-description: "Benefits of Eating Raw Garlic: 1. Ward off Colds, Coughs, and Inflammations, 2. Overcoming Hair Loss, 3. Treating Stubborn, 4. Lowers Cholesterol, 5. Controlling Blood Pressure, 6. Offers Anti-Inflammatory Effects, 7. Maintain Heart Health, 8. Improves Bone Health, 9. Lowering the Risk of Cancer, 10. Prevents Alzheimer’s And Dementia, 11. Increases Fertility, 12. Overcoming Impotence, 13. Improve Sports Performance, 14. Fights Bacteria and Fungi, 15. Maintain Brain Health, 16. Relieve Lead Poisoning"
+description: "Benefits of Eating Raw Garlic: Ward off Colds, Coughs, and Inflammations, Overcoming Hair Loss, Treating Stubborn, Lowers Cholesterol, Controlling Blood Pressure, Offers Anti-Inflammatory Effects, Maintain Heart Health, Improves Bone Health, Lowering the Risk of Cancer, Prevents Alzheimer’s And Dementia, Increases Fertility, Overcoming Impotence, Improve Sports Performance, Fights Bacteria and Fungi, Maintain Brain Health, Relieve Lead Poisoning"
 keywords:
 - benefits of garlic
 - is garlic good for you
