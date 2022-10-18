@@ -3,6 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="google-site-verification" content="hP9__GnKJ-C9Zj9ykL9ZmAUpAPXMe2tL89DLEDWz8E0"/>
+  <meta name="google-site-verification" content="RGssX8c9IeAZGdxQfQydRepvTsZqqizzb-N6w0d9lKw"/>
   <link rel="shortcut icon" href="{{ .Site.Params.favicon }}" type="image/x-icon">
   <title>{{- if .IsHome -}}{{ .Site.Title }} | Is a very fast little Blog{{- else if .IsSection -}}{{ .Page.Title }}{{- else if .IsNode -}}{{ .Site.Title }} - {{ .Page.Title }}{{- else if .IsPage -}}{{ .Page.Title }} | {{ .Site.Title }}{{- else -}}{{ .Site.Title }} | Is a very fast little Blog{{- end -}}</title>
   {{ if .IsPage }}<meta name="keywords" content="{{ if .Params.Keywords }}{{ delimit .Params.Keywords ", " }}{{ else }}{{ end }}">{{ else }}{{ end }}
