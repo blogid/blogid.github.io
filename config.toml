@@ -30,10 +30,10 @@ copyright = '2022. Blog ID - All rights reserved'
 
   [[related.indices]]
     name = "tags"
-    weight = 80
+    weight = 100
   [[related.indices]]
     name = 'keywords'
-    weight = 90
+    weight = 80
   [[related.indices]]
     name = "title"
-    weight = 100
+    weight = 70
