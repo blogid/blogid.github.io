@@ -1,4 +1,4 @@
-baseURL = 'https://www.rizqyromadhona.my.id'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Blog ID'
 theme = 'blog'
